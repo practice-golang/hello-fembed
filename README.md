@@ -1,4 +1,4 @@
-# Go 1.16 file embeding practice on Gio
+# Go 1.16 file embeding practice for Gio
 
 ![hello_screenshot](./screenshot.png)
 
