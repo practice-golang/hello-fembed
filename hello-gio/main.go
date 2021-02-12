@@ -9,6 +9,7 @@ import (
 	"gioui.org/layout"
 	"gioui.org/op"
 	"gioui.org/text"
+	"gioui.org/unit"
 	"gioui.org/widget/material"
 
 	// giofont "gioui.org/font/gofont"
@@ -17,7 +18,9 @@ import (
 
 func main() {
 	go func() {
-		w := app.NewWindow()
+		// w := app.NewWindow()
+		w := app.NewWindow(app.Title("Hello 창"), app.Size(unit.Dp(600), unit.Dp(300)))
+		w.Invalidate() // Prevent eat system.FrameEvent
 		if err := loop(w); err != nil {
 			log.Fatal(err)
 		}
