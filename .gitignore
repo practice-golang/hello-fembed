@@ -1,0 +1,5 @@
+/hello-gio.*
+/bin/server.*
+/bin/hello-gio.*
+/hello-gio/hello-gio.*
+/hello.wasm
